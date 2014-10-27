@@ -1,0 +1,27 @@
+.container{
+    width: 98%;
+}
+
+.inputdate{
+    width: 100px;
+}
+
+.inputitem{
+    width: 140px;
+}
+
+.inputprice{
+    width: 40px;
+}
+
+.inputpayer{
+    width: 85px;
+}
+
+.inputuser{
+    width: 220px;
+}
+
+.inputaction{  
+    width: 80px;
+}

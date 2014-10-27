@@ -1,0 +1,12 @@
+<?php
+$db_hostname = "localhost";
+$db_user = "";
+$db_password = "";
+$db_table = "bill";
+
+$deploy_time = "2014-08";
+$timezone_string = "America/New_York";
+$nopassword_access = true;
+
+$pagetitle = "466 Expenditure";
+$wel_msg = "A fresh new start";
