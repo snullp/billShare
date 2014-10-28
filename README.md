@@ -9,10 +9,9 @@ Yes, this is an one-page app. What you see in this screenshot is what you will h
 3. Move README/config.php.example to include/config.php, modify its content by your need.
 4. Insert user informations into user table.
 
-   INSERT INTO  `DATABASE`.`users` (`id` ,`name` ,`password`) VALUES (NULL ,  `USER_NAME`, MD5(`MD5(PASS_WORD).$pagetitle`));
+    INSERT INTO  `DATABASE`.`users` (`id` ,`name` ,`password`) VALUES (NULL ,  `USER_NAME`, MD5(`MD5(PASS_WORD).$pagetitle`));
   
-You need to replace `DATABASE`, `USER_NAME` and entire `MD5(PASS_WORD).$pagetitle`(this is PHP syntax) to actual valid strings. If you don't want password protection, leave password field to `None`.
-
+    You need to replace `DATABASE`, `USER_NAME` and entire `MD5(PASS_WORD).$pagetitle`(this is PHP syntax) to actual valid strings. If you don't want password protection, leave password field to `None`.
 5. (Optional) Set http rewrite, this is only available when you don't have someone's password field set. Also block include/ access.
 
 NGINX Example:
