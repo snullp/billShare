@@ -4,17 +4,15 @@
 Yes, this is an one-page app. What you see in this screenshot is what you will have with it.
 
 ##How to deploy##
-0. You need a PHP+MySQL web environment.
-1. Import README/structure.sql to an mysql database.
-2. Move README/config.php.example to include/config.php, modify everything you need.
-3. Insert user informations into user table.
+1. You need a PHP+MySQL web environment.
+2. Import README/structure.sql to an mysql database.
+3. Move README/config.php.example to include/config.php, modify its content by your need.
+4. Insert user informations into user table.
 
    INSERT INTO  `DATABASE`.`users` (`id` ,`name` ,`password`) VALUES (NULL ,  `USER_NAME`, MD5(`MD5(PASS_WORD).$pagetitle`));
   
 You need to replace `DATABASE`, `USER_NAME` and entire `MD5(PASS_WORD).$pagetitle`(this is PHP syntax) to actual valid strings. If you don't want password protection, leave password field to `None`.
-
-4
-. (Optional) Set http rewrite, this is only available when you don't have someone's password field set. Also block include/ access.
+5. (Optional) Set http rewrite, this is only available when you don't have someone's password field set. Also block include/ access.
 
 NGINX Example:
 
